@@ -1,0 +1,56 @@
+#moratilla
+
+#############################################################
+#functions
+MY_PROJECTS="$HOME/mystuff/sw-projects";
+SW_EXT="$HOME/mystuff/software-ext";
+
+gtp() {
+  cd $MY_PROJECTS
+}
+
+gtsw() {
+  cd $SW_EXT
+}
+
+exportJava() {
+  export JAVA_HOME;
+  PATH=$JAVA_HOME/bin:$PATH
+  export PATH
+}
+
+java8() {
+  JAVA_HOME="$HOME/mystuff/software-ext/jdk1.8.0_231/"
+  exportJava
+}
+java11() {
+  JAVA_HOME="/home/juan/mystuff/software-ext/jdk-11";
+  exportJava  
+}
+java13() {
+  JAVA_HOME="/home/juan/mystuff/software-ext/jdk-13.0.1";
+  exportJava
+}
+
+help() {
+  echo "## moratilla shell!! ##";
+  echo "-- useful aliases"
+  echo "  gtp -> cd $MY_PROJECTS"
+  echo "  gtsw -> cd $SW_EXT"
+  echo ""
+  echo "-- choose java version"
+  echo "   java8"
+  echo "   java11"
+  echo "   java13"
+}
+
+java13
+
+MVN_HOME="/home/juan/mystuff/software-ext/apache-maven-3.6.2";
+export MVN_HOME;
+PATH=$PATH:$MVN_HOME/bin;
+
+export PATH;
+
+help
+
