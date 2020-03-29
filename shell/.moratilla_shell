@@ -31,6 +31,10 @@ java13() {
   JAVA_HOME="/home/juan/mystuff/software-ext/jdk-13.0.1";
   exportJava
 }
+java14() {
+  JAVA_HOME="/home/juan/mystuff/software-ext/jdk-14";
+  exportJava
+}
 
 help() {
   echo "## moratilla shell!! ##";
@@ -42,9 +46,10 @@ help() {
   echo "   java8"
   echo "   java11"
   echo "   java13"
+  echo "   java14"
 }
 
-java13
+java14
 
 MVN_HOME="/home/juan/mystuff/software-ext/apache-maven-3.6.2";
 export MVN_HOME;
